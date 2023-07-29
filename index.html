@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Delgado: Mile Stone Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+</head>
+
+<body>
+    <iframe src="./assets/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+
+    <!-- i continued to have issues autoplaying the audio track on google chrome, so i found the following link with information
+on how to bypass, which included making an https://stackoverflow.com/questions/50490304/how-to-make-audio-autoplay-on-chrome-->
+    <audio autoplay loop controls>
+        <source src="./assets/themesongfull5min.mp3" type="audio/mpeg" autoplay>
+        <source src="./assets/themesong2wav.wav" type="audio/wav">
+        <!-- thank you for the audio track!!
+            http://soundfxcenter.com/download-sound/star-wars-main-theme-song/
+        the second track was trimmed and converted on -->
+
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img id="logoImg"src="./assets/Logo.jpeg">
+            </div>
+            <div id="timerbox">
+                <p id="countdown"></p>
+                <h3 id="secondsRemaining">Seconds Remaining!!</h3>
+            </div>
+            git remote set-url origin https://github.com/Adelgado4419/milestonereadme.git
+
+        </header>
+<div class="wrapper">
+
+            <div class="health">
+                <!-- <h2>Health</h2>
+                <img class="healthimg" id="health1" src="./assets/lightsaber.png"> -->
+
+
+
+    </div>
+    <div id="questionform">
+             <h2 class="questions">Questions</h2>
+
+                <form id="questionformform">
+                    <fieldset>
+                    <legend>Trivia Questions</legend>
+                    <section id="question1">
+                        <p>Who had the highest midi-chlorian count in Star Wars?</p>
+                        <label><input type="radio" value="false" name="question1"> Obi-Wan Kenobi</label><br>
+                        <label><input type="radio" value="correct" name="question1">Anakin Skywalker</label><br>
+                        <label><input type="radio" value="false" name="question1">Yoda</label>
+                        <span id="flag0"></span>
+                    </section><br><br>
+            
+                    <section id="question2">
+                        <p>What's the name of Boba Fett's ship?</p>
+                        <label><input type="radio" value="false" name="question2">The Death Star</label><br>
+                        <label><input type="radio" value="false" name="question2">Millennium Falcon</label><br>
+                        <label><input type="radio" value="correct" name="question2">Slave 1</label>
+                    </section><br><br>
+                
+
+                    <section id="question3">
+                        <p>Who killed Qui-Gon Jinn?</p>
+                        <label><input type="radio" value="correct" name="question3">Darth Maul</label><br>
+                        <label><input type="radio" value="false" name="question3">R2D2</label><br>
+                        <label><input type="radio" value="false" name="question3">Obi-Wan Kenobi</label><br>
+                    </section><br><br>
+                
+                
+                    <section id="question4">
+                        <p>According to Yoda, there are always how many Sith Lords...no more, no less?</p>
+                        <label><input type="radio" value="false" name="question4">One (Rule of One)</label><br>
+                        <label><input type="radio" value="false" name="question4">None (There are no Sith lords)</label><br>
+                        <label><input type="radio" value="correct" name="question4">Two (Rule of two)</label><br>
+                    </section><br><br>
+                
+
+                    <section id="question5">
+                        <p>Who acted as Queen Amidala's decoy?</p>
+                        <label><input type="radio" value="false" name="question5">Her assistant, Sabé</label><br>
+                        <label><input type="radio" value="false" name="question5">Her caretaker, Sabé</label><br>
+                        <label><input type="radio" value="correct" name="question5"></label>Her handmaiden, Sabé<br>
+                    </section><br><br>
+                
+
+                    <section id="question6">
+                        <p>Where was Yoda's home in his final years?</p>
+                        <label><input type="radio" value="correct" name="question6">Mustafar</label><br>
+                        <label><input type="radio" value="false" name="question6">Dagobag</label><br>
+                        <label><input type="radio" value="false" name="question6">Dantooine</label><br>
+                    </section><br><br>
+                
+
+                    <section id="question7">
+                        <p>What was Finn's stormtrooper number?</p>
+                        <label><input type="radio" value="correct" name="question7">FN-2187</label><br>
+                        <label><input type="radio" value="false" name="question7">FIN</label><br>
+                        <label><input type="radio" value="false" name="question7">FN-2181</label><br>
+                    </section><br><br>
+                
+
+                    <section id="question8">
+                        <p>Finish the quote: "This is ____"</p>
+                        <label><input type="radio" value="false" name="question8">the begining</label><br>
+                        <label><input type="radio" value="false" name="question8"></label>Fun<br>
+                        <label><input type="radio" value="correct" name="question8">the way</label><br>
+                    </section><br><br>
+
+
+                    <section id="question9">
+                        <p>What is Kyle Ren's birth name?</p>
+                        <label><input type="radio" value="false" name="question9">Ben Kylo</label><br>
+                        <label><input type="radio" value="false" name="question9">Kylo Ren</label><br>
+                        <label><input type="radio" value="correct" name="question9">Ben Solo</label><br>                    </section><br><br>
+                    <button id="submit" type="button" onclick="finalEval();">Submit!</button>
+                    <!-- call funtion on button click -->
+<!-- this site assisted with teaching me how to call a function on a button click! 
+    https://www.tutorialkart.com/javascript/how-to-call-function-on-button-click-in-javascript/#:~:text=JavaScript%20%E2%80%93%20Call%20Function%20on%20Button%20Click&text=Get%20the%20reference%20to%20the,and%20function%20passed%20as%20arguments. -->
+                </fieldset>
+                </form>
+                <p id="results"></p>
+            </div>
+        </div>
+        <footer id="rules-box">
+            <h2>Rules</h2>
+            l. Answer more than 3 questions incorrectly, you shall not.
+            <br>
+            <br>
+            ll. A time limit of 40 seconds, you shall have. 
+            <br>
+            <br>
+            lll. Searching for answers, you will not. Trust your gut, you will. 
+            <br>
+            <br>
+        </footer>
+    </div>
+
+
+    
+</body>
+<script src="./index.js"></script>
+</html>
+
+
