@@ -2,13 +2,13 @@
 ## Star Wars: Mile Stone Project
 ## Inspiration:
 
-Hello! And thnak you for taking the time to review and play my game. 
+Hello! And thank you for taking the time to review and play my game. 
 
-The StarWars trivia game came about due to a school project I was assigned; I had just finishe a Star Wars marathon and this immediately came to mind. 
+The StarWars trivia game came about due to a school project I was assigned; I had just finished a Star Wars marathon and this immediately came to mind. 
 
 ## How to Play!
 
-This game is easy to play. On load, it should ("should!") star playing music automatically. you have 40 seconds to answer as many questions as possible. You must NOT answer more than 3 incorrectly. If you do, You Fail!
+This game is easy to play. On load, it should ("should!") start playing music automatically. you have 40 seconds to answer as many questions as possible. You must NOT answer more than 3 incorrectly. If you do, You Fail!
 
 Make sure to press submit at the end of the page!
 
@@ -33,3 +33,4 @@ In my current job, I work as a programmer, however, I program Savant systems and
 - CSS-Animations
 - CSS-The-HackerTimes-Part-1
 - Media-Queries# milestonereadme
+# milestonereadme
